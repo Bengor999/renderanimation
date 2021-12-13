@@ -1,0 +1,74 @@
+
+html {
+    font-family: Montserrat, Georgia, "PT Serif"
+}
+.wrapper {
+    overflow: hidden;
+    background-color: #001031;
+
+}
+.container {
+    width: 1240px;
+    margin: auto;
+    // background-color: indigo;
+    // @media(max-width: 1279px) {
+    //     width: 100%;
+    //     height: auto;
+    // }
+}
+// .js-global-zIndex--big {
+//     z-index: 9999 !important;
+// }
+// .js-global-display--none {
+//     display: none !important;
+// }
+// .js-global-display--block {
+//     display: block !important;
+// }
+// .js-global-display--flex {
+//     display: flex !important;
+// }
+// //значки стрелки ><
+// .angular-left-arrow {
+//     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjY3MSAxNS4xNzEzQzEwLjg2NDIgMTUuMzU1MyAxMS4xNjc4IDE1LjM1NTMgMTEuMzYwOSAxNS4xNzEzTDEyLjQ3MjQgMTQuMTEyQzEyLjY3OTIgMTMuOTE0OSAxMi42NzkyIDEzLjU4NTEgMTIuNDcyNCAxMy4zODhMNy4xOTg2NCA4LjM2MTk1QzYuOTkxOTEgOC4xNjQ5MyA2Ljk5MTkxIDcuODM1MDcgNy4xOTg2NCA3LjYzODA1TDEyLjQ3MjQgMi42MTE5NUMxMi42NzkyIDIuNDE0OTMgMTIuNjc5MiAyLjA4NTA3IDEyLjQ3MjQgMS44ODgwNUwxMS4zNjA5IDAuODI4NzQ5QzExLjE2NzggMC42NDQ2ODQgMTAuODY0MiAwLjY0NDY4NCAxMC42NzEgMC44Mjg3NDlMMy41MjYxNCA3LjYzODA1QzMuMzE5NDEgNy44MzUwNyAzLjMxOTQxIDguMTY0OTMgMy41MjYxNCA4LjM2MTk1TDEwLjY3MSAxNS4xNzEzWiIgZmlsbD0iI0M2MjMwNiIvPgo8L3N2Zz4K");
+// }
+// .angular-right-arrow {
+//     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTUuMzI3NTUgMC44Mjg3NThDNS4xMzQ0MiAwLjY0NDY5NCA0LjgzMDc5IDAuNjQ0Njk0IDQuNjM3NjUgMC44Mjg3NTlMMy41MjYxNCAxLjg4ODA2QzMuMzE5NDEgMi4wODUwOCAzLjMxOTQxIDIuNDE0OTQgMy41MjYxNCAyLjYxMTk2TDguNzk5OTUgNy42MzgwNkM5LjAwNjY4IDcuODM1MDggOS4wMDY2OCA4LjE2NDk0IDguNzk5OTUgOC4zNjE5NkwzLjUyNjE0IDEzLjM4ODFDMy4zMTk0MSAxMy41ODUxIDMuMzE5NDEgMTMuOTE0OSAzLjUyNjE0IDE0LjExMkw0LjYzNzY1IDE1LjE3MTNDNC44MzA3OSAxNS4zNTUzIDUuMTM0NDIgMTUuMzU1MyA1LjMyNzU1IDE1LjE3MTNMMTIuNDcyNCA4LjM2MTk2QzEyLjY3OTIgOC4xNjQ5NCAxMi42NzkyIDcuODM1MDggMTIuNDcyNCA3LjYzODA2TDUuMzI3NTUgMC44Mjg3NThaIiBmaWxsPSIjQzYyMzA2Ii8+Cjwvc3ZnPgo=");
+// }
+.button-transparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1.5px solid $color-red;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $color-red;
+        //Отменяем выделение текста в кнопках
+        -webkit-user-select: none;
+        /* user-select -- это нестандартное свойство */
+
+        -moz-user-select: none;
+        /* поэтому нужны префиксы */
+
+        -ms-user-select: none;
+
+    @media(max-width: 1279px) {
+        height: 28px;
+        padding: 8px, 11px, 8px, 11px;
+        width: 157px;
+        font-size: 16px;
+    }
+
+}
+
+
+
