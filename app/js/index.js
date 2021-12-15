@@ -4,3 +4,4 @@
 @@include('../components/sliderSwiperFeedback/sliderSwiperFeedback.js');
 @@include('../components/memorableMomentsDoubleSlider/memorableMomentsDoubleSlider.js');
 @@include('../components/videoModalFrame/videoModalFrame.js');
+@@include('general.js');

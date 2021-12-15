@@ -362,6 +362,12 @@
                             line-height: 140%;
                             letter-spacing: 0.05em;
                             color: #000000;
+                            transition-duration: 1s;
+
+                            &_hidden {
+                                opacity: 0;
+                                transition-duration: 1s;
+                            }
                         }
                         &-position {
                             font-style: 400;
@@ -370,6 +376,14 @@
                             line-height: 140%;
                             letter-spacing: 0.05em;
                             color: #FA195C;
+                            transition-duration: 1s;
+
+                            &_hidden {
+                                opacity: 0;
+                            }
+                        }
+                        &_hidden {
+                            display: none;
                         }
                     }
                 }

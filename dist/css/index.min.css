@@ -1958,14 +1958,29 @@ button.swiper-pagination-bullet {
               font-size: 18px;
               line-height: 140%;
               letter-spacing: 0.05em;
-              color: #000000; }
+              color: #000000;
+              -webkit-transition-duration: 1s;
+                   -o-transition-duration: 1s;
+                      transition-duration: 1s; }
+              .section-representation__right-foto .quote__content-text-sign_hidden {
+                opacity: 0;
+                -webkit-transition-duration: 1s;
+                     -o-transition-duration: 1s;
+                        transition-duration: 1s; }
             .section-representation__right-foto .quote__content-text-position {
               font-style: 400;
               font-weight: 600;
               font-size: 12px;
               line-height: 140%;
               letter-spacing: 0.05em;
-              color: #FA195C; }
+              color: #FA195C;
+              -webkit-transition-duration: 1s;
+                   -o-transition-duration: 1s;
+                      transition-duration: 1s; }
+              .section-representation__right-foto .quote__content-text-position_hidden {
+                opacity: 0; }
+            .section-representation__right-foto .quote__content-text_hidden {
+              display: none; }
     .section-representation__right-back {
       width: 679px;
       height: 679px;
