@@ -10,11 +10,12 @@ html {
 .container {
     width: 1240px;
     margin: auto;
-    // background-color: indigo;
-    // @media(max-width: 1279px) {
-    //     width: 100%;
-    //     height: auto;
-    // }
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 // .js-global-zIndex--big {
 //     z-index: 9999 !important;

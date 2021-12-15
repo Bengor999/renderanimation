@@ -16,7 +16,10 @@ ButtonListener()
 
 //Определяем обьект клика
 function ButtonClick(eventObject) {
-//определяем обьект клика
+
+    //Запрет прокурутки фона
+    disableScroll();
+    //определяем обьект клика
     let clickedEl = eventObject.currentTarget;
     //Вытаскиваем из дата атрибута HTML ссылку для видео
     let src = clickedEl.dataset.info;
@@ -54,8 +57,44 @@ function closedVideoClick(eventObject) {
       modalEl.style.display = "none";
   //очищаем модульное окно, прекращая видео
       modalEl.innerHTML = ``;
+  //Восстановить прокрутку
+  enableScroll();
   }
 }
 
 
+let disableScroll = function () {
+  // let scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  // let body = document.body;
+  // body.style.position = 'fixed';
+  // body.style.top = `-${scrollY}`;
+
+
+
+
+	let pagePosition = window.scrollY;
+	document.body.classList.add('disable-scroll');
+	document.body.dataset.position = pagePosition;
+	document.body.style.top = -pagePosition + 'px';
+}
+
+let enableScroll = function () {
+
+  // let body = document.body;
+  // let scrollY = body.style.top;
+  // // body.style.position = '';
+  // body.style.top = '';
+  // window.scrollTo(0, parseInt(scrollY) * -1);
+
+
+	let pagePosition = parseInt(document.body.dataset.position, 10);
+	document.body.style.top = 'auto';
+	document.body.classList.remove('disable-scroll');
+	window.scroll({ top: pagePosition, left: 0 });
+	document.body.removeAttribute('data-position');
+}
+
+// window.addEventListener('scroll', () => {
+//   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+// });
 
