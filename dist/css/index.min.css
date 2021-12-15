@@ -1671,6 +1671,37 @@ button.swiper-pagination-bullet {
       -webkit-transform: rotate(-5.7deg);
           -ms-transform: rotate(-5.7deg);
               transform: rotate(-5.7deg); }
+    .section-age__content-tag-pin {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 90px;
+      height: 100px; }
+      .section-age__content-tag-pin img {
+        width: 90px;
+        height: 100px; }
+    .section-age__content-tag-hammer {
+      opacity: 0;
+      position: absolute;
+      top: -10%;
+      left: 40%;
+      width: 90px;
+      height: 100px; }
+      .section-age__content-tag-hammer_swinging {
+        opacity: 1;
+        -webkit-animation-name: swinging;
+                animation-name: swinging;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-direction: alternate;
+                animation-direction: alternate;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease; }
+      .section-age__content-tag-hammer img {
+        width: 90px;
+        height: 100px; }
 
 .section-representation {
   background-color: #131E35; }
@@ -2064,6 +2095,30 @@ button.swiper-pagination-bullet {
   100% {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg); } }
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
+
+@keyframes swinging {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; }
+  100% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%; } }
 
 @-webkit-keyframes flashing {
   0% {

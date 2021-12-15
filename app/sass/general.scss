@@ -119,6 +119,41 @@
             &:hover {
                 transform: rotate(-5.7deg);
             }
+            &-pin {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90px;
+                height: 100px;
+                & img {
+                    width: 90px;
+                    height: 100px;
+    
+                }
+            }
+
+            &-hammer {
+                opacity: 0;
+                position: absolute;
+                top: -10%;
+                left: 40%;
+                width: 90px;
+                height: 100px;
+                &_swinging {
+                    opacity: 1;
+                    animation-name: swinging;
+                    animation-duration: 1s;
+                    animation-direction: alternate;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease;
+        
+                }
+                & img {
+                    width: 90px;
+                    height: 100px;
+    
+                }
+            }
         }
     }
 }
@@ -458,6 +493,18 @@
         transform:rotate(-360deg);
     }
 }
+//Ключевые кадры махания молотка
+@keyframes swinging {
+    0% {
+        transform:rotate(0deg);
+        transform-origin: 100% 100%;
+    }
+    100% {
+        transform:rotate(30deg);
+        transform-origin: 100% 100%;
+    }
+}
+
 
 //Ключевые кадры мигания первого цветного логотипа
 @keyframes flashing {
