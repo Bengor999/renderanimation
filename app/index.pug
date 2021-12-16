@@ -16,9 +16,11 @@ html(lang="en")
                     .container
                         .section-age__logo 
                             img(src="assets/images/logo/logoColor.png", alt="Логотип Jet")
+                            .help__tag МИГАЕТ
                         .section-age__content 
                             .section-age__content-share
                                 img(src="assets/images/icons/Shape.png", alt="Круглый треугольник")
+                                .help__tag ВРАЩАЕТСЯ
                             .section-age__content-share.section-age__content-share-trans
                                 img(src="assets/images/icons/Shape.png", alt="Круглый треугольник")
                             .section-age__content-text1.section-age__content-text1_back 30 ЛЕТ
@@ -32,6 +34,7 @@ html(lang="en")
                                     img(src="assets/images/tools/pin.png", alt="Гвоздь")
                                 .section-age__content-tag-hammer.js-hammer
                                     img(src="assets/images/tools/hammer.png", alt="Молоток")
+                                .help__tag ПРИБИВАЕТСЯ
 
                 .section-representation
                     .container
@@ -134,14 +137,18 @@ html(lang="en")
                                         .quote__content-text
                                         .quote__content-text-sign.quote__content-text-sign_hidden Владимир Елисеев
                                         .quote__content-text-position.quote__content-text-position_hidden генеральный директор<br/>«Инфосистемы Джет»
+                                        .help__tag ГОВОРИТ
                 .section-slider-feedback
                     .container
                         h2.section-slider-feedback__header Люди и проекты, которые<br/> нас вдохновляют
+                            .help__tag ПОКАЗЫВАЕТ
                         include components/sliderSwiperFeedback/sliderSwiperFeedback.pug
                 .section-memorable-moments
                     .container
                         include components/memorableMomentsDoubleSlider/memorableMomentsDoubleSlider.pug
             include components/footer/footer.pug
             include components/videoModalFrame/videoModalFrame.pug
+            .help__button ПОДСКАЗКИ
+                .help__button-closed X
     
         include _scripts.pug

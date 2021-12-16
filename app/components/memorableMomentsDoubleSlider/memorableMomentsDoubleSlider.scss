@@ -10,6 +10,7 @@
   &__top {
     color: white;
     text-align: center;
+    position: relative;
     &-header {
       font-weight: bold;
       font-size: 36px;
@@ -199,6 +200,12 @@
     }
 
   }
+  & .help__tag {
+    top: -0%;
+    left: 0%;
+    transform: rotate(30deg);
+}
+
 }
 
 .disable-scroll {

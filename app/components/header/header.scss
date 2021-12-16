@@ -27,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             &-link {
                 font-weight: 600;
                 line-height: 16px;
@@ -37,6 +38,11 @@
                     transform: scale(1.4);
                     transition: 0.1s;
                 }
+            }
+            & .help__tag {
+                top: 250%;
+                left: 15%;
+                transform: rotate(-30deg);
             }
         }
         &-lang {

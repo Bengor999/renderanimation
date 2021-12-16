@@ -174,3 +174,48 @@ function workingToolsRight() {
 }
 
 
+
+
+//Подсказки
+
+function helpBtnListener() {
+  let helpBtnEl = document.querySelector(".help__button")
+  let helpBtnClosedEl = document.querySelector(".help__button-closed")
+  let arrHelpTag = document.querySelectorAll(".help__tag")
+
+
+  helpBtnEl.addEventListener('mouseover', function() {
+    visibleHelpTag(arrHelpTag);
+  });
+  helpBtnEl.addEventListener('mouseout', function() {
+    hiddenHelpTag(arrHelpTag);
+  });
+  helpBtnClosedEl.addEventListener('click', function() {
+    hiddenHelpBtn(helpBtnEl);
+  });
+
+}
+
+helpBtnListener();
+
+function visibleHelpTag(arrHelpTag) {
+  for (let index = 0; index < arrHelpTag.length; index++) {
+    let element = arrHelpTag[index];
+    element.classList.add("help__tag-visible")
+  }
+}
+
+function hiddenHelpTag(arrHelpTag) {
+  for (let index = 0; index < arrHelpTag.length; index++) {
+    let element = arrHelpTag[index];
+    element.classList.remove("help__tag-visible")
+  }
+}
+function hiddenHelpBtn(helpBtnEl) {
+  helpBtnEl.classList.add("help__button-hidden")
+  
+}
+
+
+
+
